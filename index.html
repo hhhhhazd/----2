@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的个人网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#contact">联系方式</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="搜索内容...">
+            <button id="searchButton">搜索</button>
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>欢迎来到我的网站</h2>
+                <p>这是我的个人网站，您可以在这里了解我的信息和作品。</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>关于我</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>您好！我是luyu，一位学生。</p>
+                        <p>我的目标是完成计算机网络作业。</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="1.jpg" alt="个人照片">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>作品集</h2>
+                <div class="portfolio-items">
+                    <div class="portfolio-item" data-tags="项目,网站,设计">
+                        <img src="https://via.placeholder.com/300x200" alt="项目1">
+                        <h3>项目1</h3>
+                        <p>这是我的第一个项目描述。</p>
+                    </div>
+                    <div class="portfolio-item" data-tags="应用,开发,编程">
+                        <img src="https://via.placeholder.com/300x200" alt="项目2">
+                        <h3>项目2</h3>
+                        <p>这是我的第二个项目描述。</p>
+                    </div>
+                    <div class="portfolio-item" data-tags="设计,创意,艺术">
+                        <img src="https://via.placeholder.com/300x200" alt="项目3">
+                        <h3>项目3</h3>
+                        <p>这是我的第三个项目描述。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>联系方式</h2>
+                <div class="contact-info">
+                    <p><strong>邮箱：</strong> 2504302531@qq.com</p>
+                    <p><strong>电话：</strong> +114514</p>
+                    <p><strong>地址：</strong> 桂林电子科技大学</p>
+                </div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">发送</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
